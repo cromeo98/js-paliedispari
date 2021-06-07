@@ -22,6 +22,11 @@ while (userNumber > 5 || userNumber <= 0){
     i++;
 }
 
+// 6) Assegno ad una variabile il numero random utilizzando la funzione creata (punto 5)
+var pcNumber = randomNum (1, 5)
+console.log(pcNumber);
+
+
 // 5) Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 //********** functions
 function randomNum (n1, n2){
