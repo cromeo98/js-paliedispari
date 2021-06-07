@@ -21,3 +21,9 @@ while (userNumber > 5 || userNumber <= 0){
     userNumber = prompt('Scegli un numero tra 1 e 5!');
     i++;
 }
+
+// 5) Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+//********** functions
+function randomNum (n1, n2){
+    return Math.floor(Math.random() * (n2 - n1) ) + n1;
+}
