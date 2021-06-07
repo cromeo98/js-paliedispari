@@ -38,7 +38,7 @@ function wordBackwards (wordToReverse){
         reverseWord += splittedWord[i];
     }
 
-    // 3) valorizzo il return della funzione
+    // 4) valorizzo il return della funzione
     if (reverseWord == word){
         return 'la parola è palindroma'
     } else {
