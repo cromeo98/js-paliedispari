@@ -18,14 +18,14 @@ while (wLenght < 3){
 }
 
 // 6) Assegno alla variabile results la funzione wordBackwards (punto 6) con come variabile propria la parola inserita dall'utente
-var results = wordBackwards(word);
+var results = isPalindrome(word);
 
 console.log(results);
 
 
 //6) Creo la funzione
 //******** functions
-function wordBackwards (wordToReverse){
+function isPalindrome(wordToReverse){
 
     // 1) creo un'array contente le lettere della parola scelta dall'utente
     var splittedWord = wordToReverse.split("");
