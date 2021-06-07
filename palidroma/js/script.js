@@ -6,8 +6,10 @@ var word = prompt('inserisci una parola di minimo 3 lettere');
 // 2) Assegno a una nuova variabile la lunghezza della parola inserita dall'utente 
 var wLenght = word.length
 
+// 3) Trasformo la parola scelta dall'utente in lower case
+var wordLowCase = word.toLowerCase();
 
-// 3) Verifico che la parola inserita abbia almeno 3 lettere
+// 4) Verifico che la parola inserita abbia almeno 3 lettere
 var i = 0;
 
 while (wLenght < 3){
@@ -15,20 +17,20 @@ while (wLenght < 3){
     i++;
 }
 
-// 5) Assegno alla variabile results la funzione wordBackwards (punto 4) con come variabile propria la parola inserita dall'utente
+// 6) Assegno alla variabile results la funzione wordBackwards (punto 6) con come variabile propria la parola inserita dall'utente
 var results = wordBackwards(word);
 
 console.log(results);
 
 
-//4) Creo la funzione
+//6) Creo la funzione
 //******** functions
 function wordBackwards (wordToReverse){
 
     // 1) creo un'array contente le lettere della parola scelta dall'utente
     var splittedWord = wordToReverse.split("");
 
-    // 2) creo una variabile alla quale assegnare un valore vuoto
+    // 2) creo una variabile alla quale assegno un valore vuoto
     var reverseWord = '';
 
     // 3) costruisco la parola al contrario sfruttando l'array creata e la dichiaro nella variabile vuota creata al punto 2
