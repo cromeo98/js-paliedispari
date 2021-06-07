@@ -11,13 +11,13 @@ while (userEvenOdd != 'pari' && userEvenOdd != 'dispari'){
     i++
 }
 
-// 4) Chiedo all'utente di scegliere tra pari e dispari
-//var userNumber = prompt('Scegli un numero tra 1 e 5');
+// 3) Chiedo all'utente di scegliere tra pari e dispari
+var userNumber = prompt('Scegli un numero tra 1 e 5');
 
-// 3) Verifico che l'utente abbia effetivamente scelto un numero tra 1 e 5
-//var i = 0;
+// 4) Verifico che l'utente abbia effetivamente scelto un numero tra 1 e 5
+var i = 0;
 
-//while (userNumber > 5 || userNumber <= 0){
-//    userNumber = prompt('Scegli un numero tra 1 e 5!');
-//    i++;
-//}
+while (userNumber > 5 || userNumber <= 0){
+    userNumber = prompt('Scegli un numero tra 1 e 5!');
+    i++;
+}
