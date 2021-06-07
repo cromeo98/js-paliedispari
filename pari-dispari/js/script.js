@@ -12,13 +12,13 @@ while (userEvenOdd != 'pari' && userEvenOdd != 'dispari'){
 }
 
 // 3) Chiedo all'utente di scegliere tra pari e dispari
-var userNumber = prompt('Scegli un numero tra 1 e 5');
+var userNumber = parseInt(prompt('Scegli un numero tra 1 e 5'));
 
 // 4) Verifico che l'utente abbia effetivamente scelto un numero tra 1 e 5
 var i = 0;
 
 while (userNumber > 5 || userNumber <= 0){
-    userNumber = prompt('Scegli un numero tra 1 e 5!');
+    userNumber = parseInt(prompt('Scegli un numero tra 1 e 5!'));
     i++;
 }
 
@@ -26,6 +26,9 @@ while (userNumber > 5 || userNumber <= 0){
 var pcNumber = randomNum (1, 5)
 console.log(pcNumber);
 
+// 7) Sommo i due numeri
+var sum = userNumber + pcNumber 
+console.log(sum);
 
 // 5) Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 //********** functions
