@@ -3,22 +3,16 @@
 // 1) Chiedo all'utente di scegliere tra pari e dispari
 var userEvenOdd = prompt('Scegli.. pari o dispari?');
 
-// 2a) Verifico che l'utente abbia effetivamente scritto qualcosa
-var i = 0
-while(userEvenOdd == null){
-    userEvenOdd = prompt('Scrivi pari o dispari!');
-    i++
-}
-
-userEvenOdd = userEvenOdd.toLowerCase
-
-// 2b) Verifico che l'utente abbia effetivamente scritto pari o dispari
+// 2) Verifico che l'utente abbia effetivamente scritto pari o dispari
 var i = 0;
 
 while (userEvenOdd != 'pari' && userEvenOdd != 'dispari'){
-    userEvenOdd = prompt('Scrivi pari o dispari!');
+    if (userEvenOdd == null) {
+        userEvenOdd = prompt('Scrivi pari o dispari!');
+    } else if(userEvenOdd.toLowerCase != 'pari' && userEvenOdd.toLowerCase != 'dispari'){
+        userEvenOdd = prompt('Scrivi pari o dispari!');
+    }    
     i++;
-    console.log(userEvenOdd);
 }
 console.log('L\'utente ha scelto ' + userEvenOdd);
 
