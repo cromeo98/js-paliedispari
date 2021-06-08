@@ -44,7 +44,7 @@ if (evenOrOdd == userEvenOdd) {
 //********** functions
 // 5) Creo una funzione per generare un numero random da 1 a 5.
 function randomNum (n1, n2){
-    return Math.floor(Math.random() * (n2 - n1) ) + n1;
+    return Math.floor(Math.random() * (n2 - n1 + 1) ) + n1;
 }
 
 // 8) Creo un funzione per stabilire se il numero è pari o dispari
